@@ -1,12 +1,11 @@
-// utility function for reading files with fs
-import readFile from "./utils/readFile";
-// object paths
-import { objectPaths } from "./data/paths";
-import addValues from "./utils/addValues";
-import combineObjects from "./utils/combineObjects";
-import makeJSON from "./utils/makeJSON";
 
-//getting json data
+// // object paths
+import { objectPaths } from "./data/paths";
+
+// utility functions
+import { addValues, combineObjects, makeJSON, readFile } from "./utils/utils";
+
+// //getting json data
 const rawData1 = readFile(objectPaths[0].path);
 const rawData2 = readFile(objectPaths[1].path);
 const rawData3 = readFile(objectPaths[2].path);
